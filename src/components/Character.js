@@ -14,9 +14,7 @@ function Character({ char }) {
     <div className="parent">
       <div className="card card-front">
         <img src={image} alt={name} />
-        <div className="about">
-          <h3>{name}</h3>
-        </div>
+        <h3>{name}</h3>
       </div>
       <div
         className="card card-back"

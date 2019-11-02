@@ -37,15 +37,13 @@ function RickAndMorty() {
   }, [page]);
 
   return (
-    <div>
-      <CharacterList
-        characters={data}
-        pgUp={pageUp}
-        pgDwn={pageDown}
-        goBack={goBack}
-        page={page}
-      />
-    </div>
+    <CharacterList
+      characters={data}
+      pgUp={pageUp}
+      pgDwn={pageDown}
+      goBack={goBack}
+      page={page}
+    />
   );
 }
 

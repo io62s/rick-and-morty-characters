@@ -28,6 +28,10 @@
   position: relative;
   overflow: hidden;
   padding: 0.4rem;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
 }
 
 .card-back {
@@ -55,19 +59,10 @@
   transform: rotateY(0);
 }
 
-.about {
-  width: 100%;
-  display: flex;
-  flex-direction: column;
-  justify-content: space-between;
-  align-items: center;
-}
-
-.about h3 {
+.card-front h3 {
   width: 100%;
   text-align: center;
   background: #05c73f;
   color: white;
   padding: 0.6rem;
-  margin-bottom: 0.5rem;
 }
