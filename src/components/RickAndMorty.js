@@ -12,7 +12,6 @@ function RickAndMorty() {
     );
     const data = res.data.results;
     setData(data);
-    console.log(data);
   };
 
   const pageUp = () => {

@@ -11,7 +11,9 @@ function CharacterList({ characters, pgUp, pgDwn, page }) {
           <button className="btn" onClick={pgDwn}>
             Prev Page
           </button>{" "}
-          <span>Page: {page}</span>{" "}
+          <span>
+            Page: <strong>{page}</strong> of 25
+          </span>{" "}
           <button className="btn" onClick={pgUp}>
             Next Page
           </button>
