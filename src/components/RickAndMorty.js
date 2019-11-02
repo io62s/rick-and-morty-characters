@@ -27,6 +27,11 @@ function RickAndMorty() {
     }
     setPage(page - 1);
   };
+
+  const goBack = () => {
+    setPage(1);
+  };
+
   useEffect(() => {
     getData();
   }, [page]);
@@ -37,6 +42,7 @@ function RickAndMorty() {
         characters={data}
         pgUp={pageUp}
         pgDwn={pageDown}
+        goBack={goBack}
         page={page}
       />
     </div>

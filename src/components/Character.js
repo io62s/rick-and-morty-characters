@@ -2,7 +2,14 @@ import React from "react";
 import "./CharacterStyles.css";
 
 function Character({ char }) {
-  const { name, image, gender, status, species } = char;
+  const {
+    name,
+    image,
+    gender,
+    status,
+    species,
+    location: { name: location }
+  } = char;
   return (
     <div className="parent">
       <div className="card card-front">
@@ -22,7 +29,8 @@ function Character({ char }) {
       >
         <h3>Gender: {gender} </h3>
         <h3>Species: {species}</h3>
-        <p>Status: {status}</p>
+        <h5>Location: {location}</h5>
+        <h5>Status: {status}</h5>
       </div>
     </div>
   );
